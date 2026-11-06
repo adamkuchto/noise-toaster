@@ -35,3 +35,8 @@ noise-toaster/
         continue
         quit
 
+# Git.
+    Aliasy:
+        git config --global alias.st "status"
+        git config --global alias.ci "commit -m"
+
