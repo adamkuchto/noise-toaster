@@ -1,0 +1,37 @@
+# Docelowe drzewo projektu.
+noise-toaster/
+├── CMakeLists.txt
+├── README.md
+├── .gitignore
+├── src/
+│   ├── main.cpp
+│   ├── core/
+│   ├── dsp/
+│   ├── engine/
+│   └── gui/
+├── tests/
+└── docs/
+
+# CMakeLists wyjaśnienia.
+    project() definiuje projekt.
+    CMAKE_CXX_STANDARD ustawia standard C++.
+    add_executable() definiuje program wykonywalny.
+    target_compile_options() włącza ostrzeżenia kompilatora.
+
+# Budowanie i uruchamianie.
+    cmake -S . -B build -G Ninja \
+        -DCMAKE_BUILD_TYPE=Debug
+    cmake --build build
+    ./build/noise-toaster
+
+# Debugger.
+    Uruchomienie:
+        gdb ./build/noise-toaster
+    Obsługa:
+        break main
+        run
+        next
+        next
+        continue
+        quit
+
