@@ -40,3 +40,9 @@ noise-toaster/
         git config --global alias.st "status"
         git config --global alias.ci "commit -m"
 
+# C++
+    private chroni stan obiektu.
+    final uniemożliwia dziedziczenie po tej klasie.
+    const w metodach odczytujących zapobiega modyfikacji stanu.
+    noexcept deklaruje brak wyjątków.
+    [[nodiscard]] przypomina o konieczności wykorzystania wyniku.
