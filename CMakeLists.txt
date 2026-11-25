@@ -13,6 +13,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(noise_toaster
     src/main.cpp
     src/core/Parameter.cpp
+    src/dsp/SineOscillator.cpp
 )
 
 target_compile_definitions(noise_toaster PRIVATE
